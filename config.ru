@@ -1,11 +1,15 @@
-require 'sinatra'
+# NOTE: This is the previous code before refactoring:
+# require 'sinatra'
 
-class App < Sinatra::Base
+# class App < Sinatra::Base
 
-  get '/' do
-    'reload please!!!'
-  end
+#   get '/' do
+#     "<h2>Hello <em>World</em>!</h2>"
+#   end
   
-end
+# end
 
-run App
+# run App
+require_relative "./config/environment"
+
+run ApplicationController
